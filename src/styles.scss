@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~material-design-icons/iconfont/material-icons.css";
+@import "./scss/_custom-theme";
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("assets/background.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}

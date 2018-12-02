@@ -1,0 +1,79 @@
+@import '~@angular/material/theming';
+
+/* Custom Color */
+$costom-blue: (
+  50: #E2EBF6,
+  100: #B7CCE9,
+  200: #87ABDA,
+  300: #5789CB,
+  400: #336FC0,
+  500: #0F56B5,
+  600: #0D4CA9,
+  700: #0B3F9A,
+  800: #08338B,
+  900: #041C71,
+  A100: #83B6FC,
+  A200: #1F7CF9,
+  A400: #066EF9,
+  A700: #055CD1,
+  contrast: (
+    50: $dark-primary-text,
+    100: $dark-primary-text,
+    200: $dark-primary-text,
+    300: $light-primary-text,
+    400: $light-primary-text,
+    500: $light-primary-text,
+    600: $light-primary-text,
+    700: $light-primary-text,
+    800: $light-primary-text,
+    900: $light-primary-text,
+    A100: $dark-primary-text,
+    A200: $light-primary-text,
+    A400: $light-primary-text,
+    A700: $light-primary-text,
+  )
+);
+
+$costom-orange: (
+  50: #FEF5E0,
+  100: #FCE6B3,
+  200: #FBD580,
+  300: #F9C44D,
+  400: #F7B826,
+  500: #F6AB00,
+  600: #F29B00,
+  700: #EE8700,
+  800: #EA7300,
+  900: #E25000,
+  A100: #FFD880,
+  A200: #FFB91A,
+  A400: #FFB100,
+  A700: #D69500,
+  contrast: (
+    50: $dark-primary-text,
+    100: $dark-primary-text,
+    200: $dark-primary-text,
+    300: $dark-primary-text,
+    400: $dark-primary-text,
+    500: $dark-primary-text,
+    600: $dark-primary-text,
+    700: $dark-primary-text,
+    800: $light-primary-text,
+    900: $light-primary-text,
+    A100: $dark-primary-text,
+    A200: $dark-primary-text,
+    A400: $dark-primary-text,
+    A700: $dark-primary-text,
+  )
+);
+
+/* Colors Setting */
+$costom-primary: mat-palette($costom-blue);
+$costom-accent: mat-palette($costom-orange);
+
+/* Custom Theme */
+$costom-light-theme: mat-light-theme($costom-primary, $costom-accent);
+$costom-dark-theme: mat-dark-theme($costom-primary, $costom-accent);
+
+@include mat-core();
+@include angular-material-theme($costom-light-theme);
